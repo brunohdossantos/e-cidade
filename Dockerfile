@@ -1,11 +1,13 @@
 FROM ubuntu:16.04
 
-RUN apt-get install software-properties-common
+RUN apt-get -y update
+
+RUN apt-get -y install software-properties-common
 
 RUN apt-add-repository -y ppa:ondrej/php
 RUN apt update
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y –allow-unauthenticated --no-install-recommends\
       apache2 \
       php5.6 \
       php5.6-bcmath \
