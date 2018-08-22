@@ -1,7 +1,9 @@
 FROM ubuntu:16.04
 
-#RUN apt-add-repository -y ppa:ondrej/php
-#RUN apt update
+RUN apt-get install software-properties-common
+
+RUN apt-add-repository -y ppa:ondrej/php
+RUN apt update
 
 RUN apt-get update && apt-get install -y \
       apache2 \
