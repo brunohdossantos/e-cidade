@@ -1,7 +1,7 @@
 # Sistema Web e-cidade
 
 # Tags disponíveis
-- [2.3.46], [latest]
+- [latest]
 
 Definição do container docker para o sistema web do e-cidade.
 
@@ -47,5 +47,4 @@ Caso não seja informado, o valor utilizado será: ```e-cidade```
 
 Caso seja utilizado um container postgres linkado, não é necessário informar nenhum parâmetro. É sugerido utilizar a imagem já configurada do postgres com a estrutura do e-cidade, que pode ser encontrada em: https://hub.docker.com/r/edsondewes/postgres-ecidade/
 
-[2.3.46]: <https://github.com/edsondewes/docker-ecidade/blob/master/Dockerfile>
-[latest]: <https://github.com/edsondewes/docker-ecidade/blob/master/Dockerfile>
+[latest]: <https://github.com/myersBR/e-cidade/blob/master/Dockerfile>
