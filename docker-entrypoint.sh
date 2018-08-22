@@ -67,3 +67,5 @@ sed -i "65s/.*/<browser name='firefox' versao='47.*.*'><\/browser>/" /var/www/e-
 
 echo 'Iniciando apache2'
 source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND
+
+#teste
