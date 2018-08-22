@@ -43,7 +43,7 @@ RUN chown www-data.www-data /var/log/php_errors.log
 COPY apache_default /etc/apache2/sites-available/default
 RUN a2enmod rewrite
 
-RUN curl -SL https://github.com/myersBR/e-cidade/releases/download/latest/e-cidade-2018-2-linux-completo.tar.bz2 | tar -xjf -C /var/www/
+RUN curl -SL https://github.com/myersBR/e-cidade/releases/download/e-cidade2018/e-cidade-2018-2-linux-completo.tar.bz2 | tar -xjf -C /var/www/
 
 RUN mkdir /var/www/tmp \
     && chown -R www-data.www-data /var/www/tmp \
